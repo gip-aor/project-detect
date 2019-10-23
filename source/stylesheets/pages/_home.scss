@@ -56,7 +56,26 @@ background-position: center bottom;
   border-radius: 50px;
 }
 
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.banner {
+  background-size: cover;
+  height: calc(100vh - 70px);
+}
+
 .fullscreen {
   width: 100%;
   height: calc(100vh - 70px);
+}
+
+.fas {
+  color: #00597B;
 }

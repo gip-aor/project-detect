@@ -53,6 +53,8 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.1.5)
     ffi (1.10.0)
+    font-awesome-sass (5.11.2)
+      sassc (>= 1.11)
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
@@ -187,6 +189,7 @@ PLATFORMS
 DEPENDENCIES
   actionview (>= 5.0.7.2)
   bootstrap (~> 4.3.1)
+  font-awesome-sass (~> 5.11.2)
   jquery-middleman
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
