@@ -1,0 +1,32 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+#francemap {
+  margin: 0 auto;
+}
+.jqvmap-label{
+  position: absolute;
+  display: none;
+  border-radius: 5px;
+  background: #fff;
+  color: #8E8E8E;
+  padding: 3px;
+  font-size:.95em;
+  padding:5px 9px;
+  font-weight:bold;
+  box-shadow:0px 3px 7px 2px rgba(0,0,0,.3);
+}
