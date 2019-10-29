@@ -20,10 +20,14 @@ padding:0;
   justify-content: center;
 }
 .carousel-inner {
+height: calc(100vh - 70px);
+
 }
 .carousel {
 margin-bottom: 0;
 margin-top: 0;
+height: calc(100vh - 70px);
+
 }
 .carousel-caption {
 z-index: 10;
@@ -34,6 +38,7 @@ background-color: #777;
 .carousel .carousel-inner .bg {
 background-repeat:no-repeat;
 background-size:cover;
+height: calc(100vh - 70px);
 }
 .carousel .carousel-inner .bg1 {
 background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/spiderweb.jpg');
@@ -68,7 +73,7 @@ background-position: center bottom;
 
 .banner {
   background-size: cover;
-  height: calc(100vh - 70px);
+  width: 100%;
 }
 
 .fullscreen {
@@ -76,6 +81,13 @@ background-position: center bottom;
   height: calc(100vh - 70px);
 }
 
-.fas {
+.fas-color {
   color: #00597B;
 }
+
+.shad {
+  width: 100%;
+  box-shadow: 8px 8px 12px #555;
+}
+
+
