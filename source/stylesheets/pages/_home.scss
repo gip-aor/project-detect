@@ -8,31 +8,58 @@ html, body {
   height:100%;
   margin:0;
   padding:0;
+  background-color: #F5F5F5;
 }
 .w-100 {
   width: 100% !important;
   height: 100vh;
 }
 
-.container {
-  padding-top: 80px;
-  padding-bottom: 0px;
+// .container {
+//   padding-top: 80px;
+//   padding-bottom: 0px;
+// }
+
+.btn-medium-white {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
 }
 
-.btn-medium {
+.btn-medium-white:hover {
   color: white;
   background: #00597B;
   border: 1px solid #00597B;
   padding: 10px 20px;
   border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+
 }
 
-.btn-medium:hover {
+.btn-medium-blue {
+  color: white;
+  background: #00597B;
+  border: 1px solid #00597B;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+
+}
+
+.btn-medium-blue:hover {
   color: #00597B;
   background: white;
   border: 1px solid white;
   padding: 10px 20px;
   border-radius: 50px;
+  text-decoration: none;
+
 }
 
 .btn-ghost {
@@ -43,6 +70,7 @@ html, body {
   font-weight: lighter;
   opacity: 0.6;
   transition: opacity 0.3s ease;
+  text-decoration: none;
 }
 
 .banner {
@@ -56,7 +84,7 @@ html, body {
 }
 
 .fas-color {
-  color: #00597B;
+  color: white;
 }
 
 .shad {
@@ -137,7 +165,7 @@ html, body {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  // justify-content: space-around;
   text-align: center;
   h1 {
     margin: 0 50px 50px 50px;
@@ -164,7 +192,7 @@ html, body {
   position: fixed;
   position: top;
   width: 100%;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 
@@ -216,7 +244,7 @@ html, body {
     border-color: #00597B;
 
     &:hover, &:focus {
-      background-color: black;
+      background-color: white;
     }
 
 
@@ -229,42 +257,44 @@ html, body {
   }
 
   .navbar-collapse.collapse.in ul {
-    background-color: black;
+    background-color: white;
     width: 100%;
 
   }
 
 } //end .navbar-default
 
-
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-top: 11px;
+}
 
 /* Solid class attached on scroll past first section */
 
 .navbar.solid {
-  background-color: black;
+  background-color: white;
   transition: background-color 1s ease 0s;
-  box-shadow: 0 0 4px black;
+  // box-shadow: 0 0 4px white;
   width: 100%;
 
   .navbar-brand {
     color: #00597B;
     transition: color 1s ease 0s;
+    text-align: center;
+  }
+
+  .navbar-light .navbar-brand {
+    color: white;
   }
 
   .navbar-nav {
 
 
-   > li {
+    > li {
 
 
-    color: #00597B;
-    transition: color 1s ease 0s;
-
-
-    > a {
-      color: #00597B;
-      transition: color 1s ease 0s;
-    }
+        > a.classic-link {
+          color: #555!important;
+          transition: color 1s ease 0s;
 
        } //end li
 
@@ -272,20 +302,107 @@ html, body {
 
   }
 
+
+    .navbar-nav {
+
+
+    > li {
+
+      > .btn-medium-white {
+        color: white;
+        background: #00597B;
+        border: 1px solid #00597B;
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-align: center;
+
+       } //end li
+     }
+    } //end .navbar-nav
+
+  }
+
+.nav-right {
+    position: absolute;
+    right: 25px;
+  }
+
   .nav-link {
+    display: inline-block;
     text-align: center;
+
   }
 
   .nav-item {
+    display: inline-block;
     text-align: center;
     padding: 10px;
   }
 
-  .pln {
-    margin-right: 2px;
-  }
+
 
   .navbar-toggler {
     background-color: white;
     border-color: white;
   }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+  }
+
+.navbar-lewagon .navbar-brand img {
+    width: 60px;
+    margin-left: 20px;
+}
+
+
+.banner-values{
+  padding-top: 50px;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/I/71KpvznsRrL._SL1500_.jpg")
+}
+
+
+
+.banner-contact {
+  padding-top: 50px;
+  background-size: cover;
+  background-position: center;
+  padding: 250px 0;
+}
+
+.banner h1 {
+  text-align: center;
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.circle-icon {
+    background: #00597B;
+    padding:45px;
+    border-radius: 50%;
+}
+
+
+
+.title-banner-white {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.relative42 {
+  position: relative;
+  left: 42%;
+}

@@ -1,0 +1,26 @@
+  <div class="navbar navbar-expand-md navbar-light navbar-lewagon">
+  <a class="navbar-brand" href="index.html">
+    <%= image_tag "logo-default.png" %>
+  </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <%= link_to "Qui sommes-nous ?", "qui-sommes-nous.html", class: "nav-link navbar-nav classic-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Nos préstations", "prestations.html", class: "nav-link navbar-nav classic-link" %>
+        </li>
+        <li class="nav-item nav-right">
+          <a href="contact.html" class="btn-medium-white">
+          <i class="fas fa-map-marker-alt fa-fw"></i> Nous contacter
+        </a></li>
+      </ul>
+    </div>
+
+  </div>
