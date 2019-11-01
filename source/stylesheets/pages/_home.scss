@@ -20,6 +20,11 @@ html, body {
 //   padding-bottom: 0px;
 // }
 
+
+.carousel-caption {
+    bottom: 350px;
+  }
+
 .btn-medium-white {
   color: white;
   background: transparent;
@@ -63,13 +68,22 @@ html, body {
 }
 
 .btn-ghost {
-  color: #4A4A4A;
-  border: 1px solid #4A4A4A;
+  color: #00597B;
+  border: 1px solid #00597B;
   padding: 8px 24px;
   border-radius: 50px;
-  font-weight: lighter;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
+  // font-weight: lighter;
+  // opacity: 0.6;
+  // transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-ghost:hover {
+  color: white;
+  background: #00597B;
+  border: 1px solid white;
+  padding: 8px 24px;
+  border-radius: 50px;
   text-decoration: none;
 }
 
@@ -103,7 +117,7 @@ html, body {
 
 .scroll-down {
   position: absolute;
-  bottom: 60px;
+  bottom: 150px;
   left: 50%;
   margin-left: -16px;
   display: block;
@@ -322,6 +336,15 @@ html, body {
 
   }
 
+.navbar.solid .navbar-nav > li > .btn-medium-white:hover {
+  color: #00597B;
+  background: white;
+  border: 1px solid #00597B;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
 // .nav-right {
 // margin-left: auto;
 //   }
@@ -395,6 +418,9 @@ html, body {
 }
 
 
+.title-banner {
+  margin: auto;
+}
 
 .title-banner-white {
   color: white;
@@ -410,3 +436,10 @@ html, body {
 .top-space {
   margin-top: 40px;
 }
+
+.big-space {
+  margin-top: 100px;
+}
+
+
+
