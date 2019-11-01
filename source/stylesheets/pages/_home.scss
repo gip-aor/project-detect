@@ -192,7 +192,7 @@ html, body {
   position: fixed;
   position: top;
   width: 100%;
-  // justify-content: space-between;
+  justify-content: space-between;
 }
 
 
@@ -322,10 +322,9 @@ html, body {
 
   }
 
-.nav-right {
-    position: absolute;
-    right: 25px;
-  }
+// .nav-right {
+// margin-left: auto;
+//   }
 
   .nav-link {
     display: inline-block;
@@ -403,6 +402,11 @@ html, body {
 }
 
 .relative42 {
-  position: relative;
-  left: 42%;
+  display: block;
+  margin: auto;
+  max-width: fit-content;
+}
+
+.top-space {
+  margin-top: 40px;
 }
