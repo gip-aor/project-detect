@@ -1,0 +1,177 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.showSlide3 {
+    display: none;
+    position: relative;
+    background-size: cover;
+    width: 90%;
+    height: 80%;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.slidercontainer3 {
+    max-width: 1300px;
+    position: relative;
+    margin: 40px auto;
+    height: 600px;
+    margin-bottom: 200px;
+}
+
+
+.left,
+.right {
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.right:hover {
+    animation: arrowslideR 0.5s forwards;
+}
+.left:hover {
+    animation: arrowslideL 0.5s forwards;
+}
+.right {
+    bottom: 150px;
+    right: 10px;
+    background-color: transparent;
+    background-image: url(https://gist.githack.com/Osque/602f221dcf2f58ff759d07782e113f84/raw/153034e8c1c768788b2fd13b68a6457946273da2/pijlstjes.svg);
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+    background-position: -192px;
+    border: 1px solid gray;
+}
+@keyframes arrowslideR {
+    0% {
+        background-position: -191px;
+    }
+    100% {
+        background-position: -128px;
+    }
+}
+.left {
+    bottom: 250px;
+    right: 10px;
+    background-color: transparent;
+    background-image: url(https://gist.githack.com/Osque/602f221dcf2f58ff759d07782e113f84/raw/153034e8c1c768788b2fd13b68a6457946273da2/pijlstjes.svg);
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+    background-position: -7px;
+    border: 1px solid gray;
+}
+@keyframes arrowslideL {
+    0% {
+        background-position: -7px;
+    }
+    100% {
+        background-position: -70px;
+    }
+}
+.content3 {
+    position: absolute;
+    color: #000;
+    font-size: 30px;
+    padding: 40px;
+    padding-left: 0;
+    position: absolute;
+    top: 100%;
+    text-align: left;
+    background: transparent;
+    width: 100%;
+    height: auto;
+/*                box-shadow: 0 2px 14px rgba(0,0,0,0.2); */
+}
+.content3 h2 {
+    font-size: 34px;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    margin: 0;
+}
+.content3 p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+.active {
+    background-color: #000;
+}
+.slide3 {
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 1.5s;
+    animation-name: slide;
+    animation-duration: 2.5s;
+}
+@-webkit-keyframes slide3 {
+    from {
+      background-position: calc(50% - 30px) top ;
+        opacity: 0.4;
+        transform: translateX(10px)
+    }
+    to {
+      background-position: 50% top;
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+.cta {
+    border: none;
+    outline: none;
+    padding: 15px 40px;
+    font-weight: bold;
+    background: black;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 2em;
+}
+.cta:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 0 2px black;
+}
+@media screen and (max-width: 856px) {
+    .showSlide3 {
+          width: 100%;
+
+    }
+    .slidercontainer3 {
+        width: 100%;
+        max-width: 1300px;
+        position: relative;
+        margin: 40px auto;
+        height: 60vh;
+    }
+    .content3 {
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        width: 100%;
+        height: auto;
+        padding: 50px 25px;
+        box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2);
+    }
+    .left {
+        bottom: 160px;
+        right: 86px;
+        background-color: #000;
+        background-size: 250px 250px;
+        background-repeat: no-repeat;
+        background-position: -7px;
+    }
+/*     .st0 {
+        fill: #00000;
+    } */
+    .right {
+              background-color: #000;
+
+        bottom: 160px;
+        right: 20px;
+    }
+}
+
+
+

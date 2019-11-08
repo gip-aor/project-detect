@@ -454,12 +454,22 @@ bottom: initial;
 }
 
 
+
+.align-items-center {
+  -ms-flex-align: center!important;
+  align-items: center!important;
+}
+.d-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+
 .row2 {
-  padding-top: 200px;
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
+
 }
 
 /* Create four equal columns that sits next to each other */
@@ -492,11 +502,23 @@ bottom: initial;
   }
 }
 
-.align-items-center {
-  -ms-flex-align: center!important;
-  align-items: center!important;
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 35px;
 }
-.d-flex {
-  display: -ms-flexbox!important;
-  display: flex!important;
+
+/* Clearfix (clear floats) */
+.row3::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column3 {
+    width: 100%;
+      padding: 35px;
+
+  }
 }
