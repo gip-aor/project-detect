@@ -21,9 +21,16 @@ html, body {
 // }
 
 
+.p {
+ font-size: 5px;
+}
+
 .carousel-caption {
-    bottom: 350px;
-  }
+top: 50%;
+transform: translateY(-50%);
+bottom: initial;
+
+}
 
 .btn-medium-white {
   color: white;
@@ -441,5 +448,55 @@ html, body {
   margin-top: 100px;
 }
 
+.carousel-item {
+      background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+
+}
 
 
+.row2 {
+  padding-top: 200px;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.column2 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+}
+
+.column2 img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column2 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column2 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.align-items-center {
+  -ms-flex-align: center!important;
+  align-items: center!important;
+}
+.d-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
