@@ -26,9 +26,9 @@ html, body {
 }
 
 .carousel-caption {
-top: 50%;
-transform: translateY(-50%);
-bottom: initial;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
 
 }
 
@@ -110,9 +110,13 @@ bottom: initial;
 
 .shad {
   width: 100%;
-  box-shadow: 8px 8px 12px #555;
+  box-shadow: 8px 8px 12px  #BEBEBE;
 }
 
+.logo-expert {
+  width: 70%;
+  height:auto;
+}
 
 /////
 
@@ -286,10 +290,17 @@ bottom: initial;
 } //end .navbar-default
 
 .navbar-expand-md .navbar-nav .nav-link {
-    padding-top: 11px;
+  padding-top: 11px;
 }
 
 /* Solid class attached on scroll past first section */
+
+.logo {
+  width: 100%;
+}
+.logo-invert {
+  filter: brightness(0) invert(1);
+}
 
 .navbar.solid {
   background-color: white;
@@ -313,9 +324,9 @@ bottom: initial;
     > li {
 
 
-        > a.classic-link {
-          color: #555!important;
-          transition: color 1s ease 0s;
+      > a.classic-link {
+        color: #555!important;
+        transition: color 1s ease 0s;
 
        } //end li
 
@@ -324,7 +335,7 @@ bottom: initial;
   }
 
 
-    .navbar-nav {
+  .navbar-nav {
 
 
     > li {
@@ -343,45 +354,86 @@ bottom: initial;
 
   }
 
-.navbar.solid .navbar-nav > li > .btn-medium-white:hover {
-  color: #00597B;
-  background: white;
-  border: 1px solid #00597B;
-  padding: 10px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-}
+  .navbar.solid .navbar-nav > li > .btn-medium-white:hover {
+    color: #00597B;
+    background: white;
+    border: 1px solid #00597B;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+  }
 
 // .nav-right {
 // margin-left: auto;
 //   }
 
-  .nav-link {
-    display: inline-block;
-    text-align: center;
+.nav-link {
+  display: inline-block;
+  text-align: center;
 
-  }
+}
 
-  .nav-item {
-    display: inline-block;
-    text-align: center;
-    padding: 10px;
-  }
+.nav-item {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
 
 
 
-  .navbar-toggler {
-    background-color: white;
-    border-color: white;
-  }
+.navbar-toggler {
+  background-color: white;
+  border-color: white;
+}
 
-  .navbar-light .navbar-nav .nav-link {
-    color: white;
-  }
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
 
 .navbar-lewagon .navbar-brand img {
-    width: 60px;
-    margin-left: 20px;
+  width: 60px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    background-color: white;
+  }
+  .logo-invert {
+    filter: none;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #555;
+  }
+  .navbar-nav > li > .btn-medium-white {
+    color: white;
+    background: #00597B;
+    border: 1px solid #00597B;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .navbar {
+    background-color: white;
+  }
+  .logo-invert {
+    filter: none;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #555;
+  }
+  .navbar-nav > li > .btn-medium-white {
+    color: white;
+    background: #00597B;
+    border: 1px solid #00597B;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+  }
 }
 
 
@@ -419,9 +471,9 @@ bottom: initial;
 }
 
 .circle-icon {
-    background: #00597B;
-    padding:45px;
-    border-radius: 50%;
+  background: #00597B;
+  padding:45px;
+  border-radius: 50%;
 }
 
 
@@ -449,7 +501,7 @@ bottom: initial;
 }
 
 .carousel-item {
-      background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
 
 }
 
@@ -505,7 +557,8 @@ bottom: initial;
 .column3 {
   float: left;
   width: 33.33%;
-  padding: 35px;
+  padding-top: 35px;
+  padding-right: 50px;
 }
 
 /* Clearfix (clear floats) */
@@ -518,7 +571,17 @@ bottom: initial;
 @media screen and (max-width: 500px) {
   .column3 {
     width: 100%;
-      padding: 35px;
+    padding: 35px;
 
   }
+}
+
+.numbers {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 150px;
+  font-weight: bolder;
+  color: white;
 }

@@ -17,7 +17,7 @@
     height: auto;
 }
 .mapsvg.mapsvg-cursor-pointer .mapsvg-region {
-    cursor: pointer;
+    cursor: url('https://i.imgur.com/l1bZVBm.png'), auto;
 }
 .mapsvg-loading {
     position: absolute;
@@ -173,7 +173,7 @@
 }
 
 .mapsvg-marker {
-    cursor: pointer;
+    cursor: url('https://i.imgur.com/l1bZVBm.png'), auto;
 }
 /*
 .mapsvg-marker {

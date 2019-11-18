@@ -8,7 +8,7 @@
     position: relative;
     background-size: cover;
     width: 90%;
-    height: 80%;
+    height: 300px;
     background-position: center top;
     background-repeat: no-repeat;
 }
@@ -37,7 +37,7 @@
     animation: arrowslideL 0.5s forwards;
 }
 .right {
-    bottom: 150px;
+    bottom: 65%;
     right: 10px;
     background-color: transparent;
     background-image: url(https://gist.githack.com/Osque/602f221dcf2f58ff759d07782e113f84/raw/153034e8c1c768788b2fd13b68a6457946273da2/pijlstjes.svg);
@@ -55,7 +55,7 @@
     }
 }
 .left {
-    bottom: 250px;
+    bottom: 75%;
     right: 10px;
     background-color: transparent;
     background-image: url(https://gist.githack.com/Osque/602f221dcf2f58ff759d07782e113f84/raw/153034e8c1c768788b2fd13b68a6457946273da2/pijlstjes.svg);
