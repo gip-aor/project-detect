@@ -11,7 +11,6 @@ html, body {
   background-color: #F5F5F5;
 }
 .w-100 {
-  width: 100% !important;
   height: 100vh;
 }
 
@@ -20,6 +19,10 @@ html, body {
 //   padding-bottom: 0px;
 // }
 
+.carousel .carousel-inner img {
+    display:block;
+    object-fit: cover;
+}
 
 .p {
  font-size: 5px;
@@ -29,70 +32,21 @@ html, body {
   top: 50%;
   transform: translateY(-50%);
   bottom: initial;
-
 }
 
-.btn-medium-white {
-  color: white;
-  background: transparent;
-  border: 1px solid white;
-  padding: 10px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
+
+
+.carousel-item:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
 }
 
-.btn-medium-white:hover {
-  color: white;
-  background: #00597B;
-  border: 1px solid #00597B;
-  padding: 10px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  text-align: center;
-
-}
-
-.btn-medium-blue {
-  color: white;
-  background: #00597B;
-  border: 1px solid #00597B;
-  padding: 10px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-
-}
-
-.btn-medium-blue:hover {
-  color: #00597B;
-  background: white;
-  border: 1px solid white;
-  padding: 10px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-
-}
-
-.btn-ghost {
-  color: #00597B;
-  border: 1px solid #00597B;
-  padding: 8px 24px;
-  border-radius: 50px;
-  // font-weight: lighter;
-  // opacity: 0.6;
-  // transition: opacity 0.3s ease;
-  text-decoration: none;
-}
-
-.btn-ghost:hover {
-  color: white;
-  background: #00597B;
-  border: 1px solid white;
-  padding: 8px 24px;
-  border-radius: 50px;
-  text-decoration: none;
-}
 
 .banner {
   background-size: cover;
@@ -104,9 +58,6 @@ html, body {
   height: calc(100vh - 70px);
 }
 
-.fas-color {
-  color: white;
-}
 
 .shad {
   width: 100%;
@@ -442,7 +393,7 @@ html, body {
   background-size: cover;
   background-position: center;
   padding: 150px 0;
-  background-image: url("https://images-na.ssl-images-amazon.com/images/I/71KpvznsRrL._SL1500_.jpg")
+  background-image: url("../images/banner-valeurs.png")
 }
 
 
@@ -568,6 +519,11 @@ html, body {
   display: table;
 }
 
+.row3 {
+padding-top: 50px;
+padding-bottom: 100px;
+}
+
 @media screen and (max-width: 500px) {
   .column3 {
     width: 100%;
@@ -578,6 +534,7 @@ html, body {
 
 .numbers {
   position: absolute;
+  left: -5%;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -585,3 +542,28 @@ html, body {
   font-weight: bolder;
   color: white;
 }
+
+.camtar img {
+    display:block;
+    object-fit: cover;
+}
+
+  .mobileShow {display: none;}
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){
+      .mobileShow {display: inline;}
+  }
+
+    .mobileHide { display: inline; }
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){
+     .mobileHide { display: none;}
+  }
+
+
