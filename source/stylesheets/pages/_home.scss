@@ -29,7 +29,6 @@ html, body {
 }
 
 .carousel-caption {
-  right: -50%;
   top: 50%;
   transform: translateY(-50%);
   bottom: initial;
@@ -438,6 +437,21 @@ html, body {
 .title-banner-white {
   color: white;
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .title-banner {
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .title-banner {
+    text-align: center;
+    font-size: 50px;
+  }
 }
 
 .relative42 {
