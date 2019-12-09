@@ -9,7 +9,7 @@
   background-size: cover;
   width: 90%;
   height: 300px;
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -106,7 +106,7 @@
   animation-duration: 2.5s;
 }
 
-@-webkit-keyframes slide-top2 {
+@-webkit-keyframes slide2 {
   from {
     background-position: calc(50% - 30px) top;
     opacity: 0.4;
@@ -119,18 +119,6 @@
   }
 }
 
-@-webkit-keyframes slide2 {
-  from {
-    background-position: calc(50% - 30px) center;
-    opacity: 0.4;
-    transform: translateX(10px)
-  }
-  to {
-    background-position: 50% center;
-    opacity: 1;
-    transform: translateX(0px)
-  }
-}
 .cta {
   border: none;
   outline: none;

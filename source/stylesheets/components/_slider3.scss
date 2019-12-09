@@ -106,27 +106,15 @@
   animation-duration: 2.5s;
 }
 
-@-webkit-keyframes slide-top3 {
+
+@-webkit-keyframes slide3 {
   from {
-    background-position: calc(50% - 30px) top;
+    background-position: calc(50% - 30px) top ;
     opacity: 0.4;
     transform: translateX(10px)
   }
   to {
     background-position: 50% top;
-    opacity: 1;
-    transform: translateX(0px)
-  }
-}
-
-@-webkit-keyframes slide3 {
-  from {
-    background-position: calc(50% - 30px) center ;
-    opacity: 0.4;
-    transform: translateX(10px)
-  }
-  to {
-    background-position: 50% center;
     opacity: 1;
     transform: translateX(0px)
   }

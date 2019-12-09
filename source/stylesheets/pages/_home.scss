@@ -29,6 +29,7 @@ html, body {
 }
 
 .carousel-caption {
+  right: -50%;
   top: 50%;
   transform: translateY(-50%);
   bottom: initial;
@@ -429,8 +430,10 @@ html, body {
 
 
 .title-banner {
-  margin: auto;
+  font-size: 70px;
+  text-align: left;
 }
+
 
 .title-banner-white {
   color: white;
