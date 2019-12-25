@@ -11,6 +11,8 @@ gem 'font-awesome-sass', '~> 5.11.2'
 gem 'middleman-protect-emails'
 gem 'middleman-sitemap'
 gem 'middleman-minify-html'
+gem 'slim'
+
 
 # Fix critical github warning
 gem 'actionview', '>= 5.0.7.2'
