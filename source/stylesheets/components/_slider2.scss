@@ -86,7 +86,8 @@
 /*                box-shadow: 0 2px 14px rgba(0,0,0,0.2); */
 }
 .content2 h2 {
-  font-size: 34px;
+  font-size: 30px;
+  font-weight: bolder;
   margin: 0;
 }
 .content2 p {
@@ -100,20 +101,20 @@
   background-color: #000;
 }
 .slide2 {
-  -webkit-animation-name: slide;
+  -webkit-animation-name: slide2;
   -webkit-animation-duration: 1.5s;
-  animation-name: slide;
+  animation-name: slide2;
   animation-duration: 2.5s;
 }
 
 @-webkit-keyframes slide2 {
   from {
-    background-position: calc(50% - 30px) top;
+    background-position: calc(50% - 30px) center;
     opacity: 0.4;
     transform: translateX(10px)
   }
   to {
-    background-position: 50% top;
+    background-position: 50% center;
     opacity: 1;
     transform: translateX(0px)
   }

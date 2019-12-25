@@ -16,9 +16,16 @@ configure :build do
   # ------ We commented this command as it prevented us to deploy our Middleman project on GitHub Pages ------
   # activate :minify_javascript
   activate :asset_hash
+  activate :sitemap, hostname: data.settings.site.url
   activate :relative_assets
+  activate :minify_css
+  activate :minify_javascript
+  activate :minify_html, remove_input_attributes: false
   set :relative_links, true
 end
+
+activate :gzip
+activate :protect_emails
 
 activate :deploy do |deploy|
   deploy.build_before = true
