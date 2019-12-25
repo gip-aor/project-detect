@@ -9,7 +9,6 @@ gem 'sass'
 gem "nokogiri", ">= 1.10.4"
 gem 'font-awesome-sass', '~> 5.11.2'
 gem 'middleman-protect-emails'
-gem 'middleman-sitemap'
 gem 'middleman-minify-html'
 
 
