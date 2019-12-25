@@ -3,7 +3,8 @@ activate :autoprefixer do |prefix|
 end
 
 activate :sprockets
-
+activate :gzip
+activate :protect_emails
 # ------ Uncomment and adapt if you want to use i18n ------
 # activate :i18n, mount_at_root: :fr, langs: [:fr, :en]
 
@@ -23,9 +24,6 @@ configure :build do
   activate :minify_html, remove_input_attributes: false
   set :relative_links, true
 end
-
-activate :gzip
-activate :protect_emails
 
 activate :deploy do |deploy|
   deploy.build_before = true
