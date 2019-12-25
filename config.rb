@@ -13,7 +13,6 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 configure :build do
-  activate :minify_css
   # ------ We commented this command as it prevented us to deploy our Middleman project on GitHub Pages ------
   # activate :minify_javascript
   activate :asset_hash
