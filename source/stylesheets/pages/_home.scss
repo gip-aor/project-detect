@@ -623,3 +623,10 @@ padding-bottom: 100px;
         margin-top: 50%;
     }
 }
+
+@media screen and (max-width: 450px) {
+  .center-it {
+    text-align: center;
+    padding: 20px;
+  }
+}
