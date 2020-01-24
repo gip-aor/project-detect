@@ -109,6 +109,43 @@ html, body {
   border-width: 0px 0 2px 2px;
 }
 
+.scroll-contact {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-contact {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-contact:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
+}
+
 @keyframes bounce {
   0%,
   100%,
@@ -603,7 +640,7 @@ padding-bottom: 100px;
 
 
 #infos {
-    padding-top: 20px;
+    padding-top: 80px;
 }
 
 .img-box {
