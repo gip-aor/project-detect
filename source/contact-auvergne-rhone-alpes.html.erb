@@ -5,7 +5,7 @@ title: Nous contacter | Auvergne-Rhône-Alpes | Groupe d’Investigations Privé
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="images/telephones.jpg" alt="First slide">
+      <img class="d-block w-100" src="../images/telephones.jpg" alt="First slide">
       <div class="carousel-caption d-md-block">
         <h1 class="title-banner"><strong>Entrez en contact, <br> nous intervenons 24/7</strong>
         </h1>
@@ -18,10 +18,10 @@ title: Nous contacter | Auvergne-Rhône-Alpes | Groupe d’Investigations Privé
 
 <div class="container ok" id="infos">
 
-  <div class="row top-space">
+  <div class="row top-space text-md-left text-center">
     <div class="col-md-6">
       <div>
-        <img alt="" class="img-fluid shad" src="images/passenger.jpg"/>
+        <img alt="" class="img-fluid shad" src="../images/passenger.jpg"/>
       </div>
     </div>
     <div class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0">
@@ -29,7 +29,7 @@ title: Nous contacter | Auvergne-Rhône-Alpes | Groupe d’Investigations Privé
         <p>France</p>
         <h1><strong>Pôle Auvergne-Rhône-Alpes</strong></h1>
         <br>
-        <p>33 rue Max Linder <br> 33500 LIBOURNE <br> secretariat@ac-aria.fr</p>
+        <p>15/17 RUE DU PRE DE LA REINE <br> 63100 CLERMONT FERRAND <br> 06 62 19 97 74 <br> secretariat@ac-aria.fr</p>
         <div class="mobileHide"><a href="mailto:secretariat@ac-aria.fr" class="btn btn-ghost">Nous contacter</a></div>
         <div class="mobileShow"><a href="tel:0720345678" class="btn btn-ghost">Nous contacter</a></div>
       </div>
@@ -40,27 +40,27 @@ title: Nous contacter | Auvergne-Rhône-Alpes | Groupe d’Investigations Privé
 
   <div class="row3">
     <div class="column3">
-      <img src="images/Toulouse.jpeg" alt="" class="shad" style="width:100%; height: 150px;">
+      <img src="../images/Toulouse.jpeg" alt="" class="shad" style="width:100%; height: 150px;">
       <br>
       <div class="text-center">
         <h5 class="text-center top-space"><strong>Pôle Occitanie</strong></h5>
-        <a href="contact-occitanie.html#infos" class="btn btn-ghost">Voir plus</a>
+        <%= link_to "Voir plus", "contact-occitanie.html#infos", class: "btn btn-ghost" %>
       </div>
     </div>
     <div class="column3">
-      <img src="images/pont-pierre.jpeg" alt="" class="shad" style="width:100%; height: 150px;">
+      <img src="../images/pont-pierre.jpeg" alt="" class="shad" style="width:100%; height: 150px;">
       <br>
       <div class="text-center">
         <h5 class="text-center top-space"><strong>Pôle Nouvelle-Aquitaine</strong></h5>
-        <a href="contact-nouvelle-aquitaine.html#infos" class="btn btn-ghost">Voir plus</a>
+          <%= link_to "Voir plus", "contact-nouvelle-aquitaine.html#infos", class: "btn btn-ghost" %>
       </div>
     </div>
     <div class="column3">
-      <img src="images/arc-triomphe.png" alt="" class="shad" style="width:100%; height: 150px;">
+      <img src="../images/arc-triomphe.png" alt="" class="shad" style="width:100%; height: 150px;">
       <br>
       <div class="text-center">
         <h5 class="text-center top-space"><strong>Reste de la France</strong></h5>
-        <a href="contact-autres-regions.html#infos" class="btn btn-ghost">Voir plus</a>
+          <%= link_to "Voir plus", "contact-autres-regions.html#infos", class: "btn btn-ghost" %>
       </div>
     </div>
   </div>
