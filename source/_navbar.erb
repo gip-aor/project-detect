@@ -1,7 +1,7 @@
   <div class="navbar navbar-expand-md navbar-light navbar-lewagon">
-  <a class="navbar-brand" href="/">
-    <%= image_tag "logow.png", class: "logo" %>
-  </a>
+
+    <%=link_to(image_tag("logow.png", class: "logo"), "index.html", class: "navbar-brand")%>
+
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -11,13 +11,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-            <%= link_to "Qui sommes-nous ?", "qui-sommes-nous.html", class: "nav-link navbar-nav classic-link" %>
+          <%= link_to "Qui sommes-nous ?", "qui-sommes-nous.html", class: "nav-link navbar-nav classic-link" %>
         </li>
         <li class="nav-item">
           <%= link_to "Nos prestations", "nos-prestations.html", class: "nav-link navbar-nav classic-link" %>
         </li>
         <li class="nav-item nav-right">
           <%= link_to ('<i class="fas fa-map-marker-alt fa-fw"></i> Nous contacter'), "contact-autres-regions.html", class: "btn-medium-white" %></li>
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
