@@ -66,8 +66,8 @@ $(document).ready(function() {
 
 
 // DOM Variables
-var initialImg = "../images/logo-new-white.png";
-var scrollImg = "../images/logo-new-blue.png";
+var initialImg = "../images/logo-white.png";
+var scrollImg = "../images/logo-blue.png";
 var nav = document.getElementById('navbar');
 // Scrolling Function
 $(window).scroll(function(){
