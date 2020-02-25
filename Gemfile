@@ -10,7 +10,7 @@ gem "nokogiri", ">= 1.10.4"
 gem 'font-awesome-sass', '~> 5.11.2'
 gem 'middleman-protect-emails'
 gem 'middleman-minify-html'
-gem 'middleman-google-analytics', '~> 3.0'
+gem 'middleman-google-analytics'
 
 
 # Fix critical github warning

@@ -24,11 +24,11 @@ configure :build do
   set :relative_links, true
 end
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-159048510-1' # Replace with your property ID.
+end
+
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
-end
-
-activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-159048510-1' # Replace with your property ID.
 end

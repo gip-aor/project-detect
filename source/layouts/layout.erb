@@ -1,15 +1,6 @@
 <!doctype html>
 <html>
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159048510-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-159048510-1');
-  </script>
 
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -61,11 +52,11 @@
   <%= partial "navbar" %>
   <%= yield %>
   <%= partial "footer" %>
-  <%= google_analytics_tag %>
 
 
 
   <!-- We put the JS include tag after the yeild to prevent errors (when you try to select an element that is not already loaded on the page) -->
   <%= javascript_include_tag "application" %>
+  <%= google_analytics_tag %>
 </body>
 </html>
