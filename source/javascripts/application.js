@@ -66,8 +66,8 @@ $(document).ready(function() {
 
 
 // DOM Variables
-var initialImg = "../images/logo-white.png";
-var scrollImg = "../images/logo-blue.png";
+var initialImg = "images/gip-logo-white.png";
+var scrollImg = "images/gip-logo-blue.png";
 var nav = document.getElementById('navbar');
 // Scrolling Function
 $(window).scroll(function(){
