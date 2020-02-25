@@ -52,17 +52,36 @@ $(document).ready(function() {
         });
 });
 
-$(document).ready(function() {
-        // Transition effect for navbar
-        $(window).scroll(function() {
-          // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() < 500) {
-              $('.logo').addClass('logo-invert');
-          } else {
-              $('.logo').removeClass('logo-invert');
-          }
-        });
+// $(document).ready(function() {
+//         // Transition effect for navbar
+//         $(window).scroll(function() {
+//           // checks if window is scrolled more than 500px, adds/removes solid class
+//           if($(this).scrollTop() < 500) {
+//               $('.logo').addClass('logo-invert');
+//           } else {
+//               $('.logo').removeClass('logo-invert');
+//           }
+//         });
+// });
+
+
+// DOM Variables
+var initialImg = "../images/logo-new-white.png";
+var scrollImg = "../images/logo-new-blue.png";
+var nav = document.getElementById('navbar');
+// Scrolling Function
+$(window).scroll(function(){
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 500);
 });
+// Change Logo and Logo Height on Scroll
+$(window).scroll(function() {
+   var value = $(this).scrollTop();
+   if (value > 100)
+      $(".logo").attr("src", scrollImg);
+  else
+      $(".logo").attr("src", initialImg);
+});
+
 
 if (window.matchMedia("(min-width: 800px)").matches) {
 jQuery(document).ready(function(){
