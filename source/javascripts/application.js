@@ -66,8 +66,8 @@ $(document).ready(function() {
 
 
 // DOM Variables
-var initialImg = "images/gip-logo-white.png";
-var scrollImg = "images/gip-logo-blue.png";
+var initialImg = "https://i.imgur.com/BPD3Fy6.png";
+var scrollImg = "https://i.imgur.com/FKhHemf.png";
 var nav = document.getElementById('navbar');
 // Scrolling Function
 $(window).scroll(function(){
@@ -76,7 +76,7 @@ $(window).scroll(function(){
 // Change Logo and Logo Height on Scroll
 $(window).scroll(function() {
    var value = $(this).scrollTop();
-   if (value > 100)
+   if (value > 500)
       $(".logo").attr("src", scrollImg);
   else
       $(".logo").attr("src", initialImg);
