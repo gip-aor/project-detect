@@ -25,14 +25,14 @@ $(document).ready(function() {
 
  $(function() {
     $('.scroll-down').click (function() {
-      $('html, body').animate({scrollTop: $('div.ok').offset().top-120 }, 'slow');
+      $('html, body').animate({scrollTop: $('div.ok').offset().top-165 }, 'slow');
       return false;
     });
   });
 
   $(function() {
     $('.scroll-contact').click (function() {
-      $('html, body').animate({scrollTop: $('div.ok').offset().top-85 }, 'slow');
+      $('html, body').animate({scrollTop: $('div.ok').offset().top-125 }, 'slow');
       return false;
     });
   });
