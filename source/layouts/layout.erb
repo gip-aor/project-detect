@@ -61,6 +61,8 @@
   <%= partial "navbar" %>
   <%= yield %>
   <%= partial "footer" %>
+  <%= google_analytics_tag %>
+
 
 
   <!-- We put the JS include tag after the yeild to prevent errors (when you try to select an element that is not already loaded on the page) -->
